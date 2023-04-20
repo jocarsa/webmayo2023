@@ -1,0 +1,17 @@
+/*
+    Esto un comentario
+
+    selector{
+        propiedad:valor;
+        propiedad:valor;
+        propiedad:valor;
+        ...
+    }  
+*/
+
+p{
+    color:grey;
+}
+body{
+    background:rgb(240,240,240);
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            "use strict";
+            var operando1 = 5; // Ámbito global y puede variar
+            let operando2 = 4; // Ámbito local y puede variar
+            const PI = 3.1416; // Ámbito global y no puede variar
+            console.log("El valor del operando 1 es: "+operando1);
+            operando1 = 6;
+            console.log("El valor del operando 1 es: "+operando1);
+            console.log("El valor de PI es: "+PI);
+            PI = 4;
+            console.log("El valor de PI es: "+PI);
+        </script>
+    </body>
+</html>

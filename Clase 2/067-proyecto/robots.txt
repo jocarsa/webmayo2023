@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /paneldecontrol/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dibujant.es/sitemap.xml

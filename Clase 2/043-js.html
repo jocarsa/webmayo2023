@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input id="primero">
+        <input id="segundo">
+        <button id="boton">Calcula</button>
+        <div id="resultado"></div>
+        <script>
+            document.getElementById("boton").addEventListener("click",function(){
+                console.log("Has pulsado el boton");
+                var primeroperando = document.getElementById("primero").value
+                var segundoperando = document.getElementById("segundo").value
+                var suma = primeroperando + segundoperando
+                document.getElementById("resultado").innerHTML = suma
+            })
+        </script>
+    </body>
+</html>

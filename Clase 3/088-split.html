@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+           var url = "http://localhost/webmayo2023/Clase%203/085-proyecto/?p=contacto"
+           
+           var partido = url.split("=")
+           console.log(partido)
+            primerelemento = partido[0]
+            console.log(primerelemento)
+            var vuelvoapartir = primerelemento.split("?")
+            console.log(vuelvoapartir)
+            var solomequedoconloquemeinteresa = vuelvoapartir[1]
+            console.log(solomequedoconloquemeinteresa)
+            
+            var implicito = url.split("=")[0].split("?")[1]
+            console.log(implicito)
+        </script>
+    </body>
+</html>

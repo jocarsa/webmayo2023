@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            class Animal{
+                comer(){
+                    console.log("estoy comiendo")
+                }
+            }
+            class Mamifero extends Animal{
+                constructor(){
+                    super();
+                }
+                
+                
+                mamar(){
+                    console.log("Mamo cuando soy pequeño")
+                }
+                
+            }
+            class Perro extends Mamifero{
+                
+                constructor(){
+                    super()
+                    // Estas son las propiedades
+                    this.nombre = ""
+                    this.edad = 0;
+                    this.color = ""
+                }
+                ladra(){
+                    console.log("El perro está ladrando")
+                }
+                
+            }
+            // Aquí defino la clase GATO
+            class Gato extends Mamifero{
+                // Esto quiere decir que hereda propiedades y métodos de la clase superior
+                
+                // En el constructor definimos las propiedades
+                constructor(){
+                    super()
+                    // Estas son las propiedades
+                    this.nombre = ""
+                    this.edad = 0;
+                    this.color = ""
+                }
+                // METODOS
+                // Aquí defino lo que puede hacer un gato
+                maulla(){
+                    console.log("El gato está maullando")
+                }
+                araña(){
+                    console.log("El gato te araña")
+                }
+                
+            }
+            
+            var Garfield = new Gato();
+            Garfield.comer()
+        </script>
+    </body>
+</html>

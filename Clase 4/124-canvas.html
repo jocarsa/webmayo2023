@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+        <style>
+            canvas{
+                border:1px solid black;
+                transform:scale(1);
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="lienzo" width=128 height=128></canvas>
+        <script>
+            var lado = 128
+            // Toma el elemento que tiene el id lienzo, y dentro de él voy a pintar en 2d
+            var contexto = document.getElementById("lienzo").getContext("2d")
+            contexto.lineCap = "round"
+            // Quiero controlar el grosor
+            contexto.lineWidth = 4;
+            // Inicio una linea
+            contexto.beginPath()
+            // Dibujo un circulo
+            contexto.arc(lado/2,lado/2,lado/2-4,0,Math.PI*2)
+            // Dibujo la linea
+            contexto.stroke();
+           
+            // Dibujo las manecillas
+            // Horas
+             contexto.strokeStyle = "red"
+            contexto.lineWidth = 10;
+            contexto.beginPath();
+            // Muevo el cursor hacia un punto
+            contexto.moveTo(lado/2,lado/2)
+            // Creo una linea
+            contexto.lineTo(lado/2+lado/4,lado/2);
+            contexto.stroke();
+            // Minutos
+             contexto.strokeStyle = "green"
+            contexto.lineWidth = 5;
+            contexto.beginPath();
+            // Muevo el cursor hacia un punto
+            contexto.moveTo(lado/2,lado/2)
+            // Creo una linea
+            contexto.lineTo(lado/2,lado/2+lado/3);
+            contexto.stroke();
+            // Segundos
+             contexto.strokeStyle = "blue"
+            contexto.lineWidth = 2;
+            contexto.beginPath();
+            // Muevo el cursor hacia un punto
+            contexto.moveTo(lado/2,lado/2)
+            // Creo una linea
+            contexto.lineTo(4,lado/2);
+            contexto.stroke();
+            // Creo el eje de las manecillas
+            contexto.fillStyle ="black"
+            contexto.beginPath()
+            contexto.arc(lado/2,lado/2,10,0,Math.PI*2)
+            contexto.fill();
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

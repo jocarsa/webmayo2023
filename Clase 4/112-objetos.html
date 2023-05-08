@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            class Perro{
+                constructor(){
+                    // Estas son las propiedades
+                    this.nombre = ""
+                    this.edad = 0;
+                    this.color = ""
+                }
+                ladra(){
+                    console.log("El perro está ladrando")
+                }
+            }
+            // Aquí defino la clase GATO
+            class Gato{
+                // En el constructor definimos las propiedades
+                constructor(){
+                    // Estas son las propiedades
+                    this.nombre = ""
+                    this.edad = 0;
+                    this.color = ""
+                }
+                // METODOS
+                // Aquí defino lo que puede hacer un gato
+                maulla(){
+                    console.log("El gato está maullando")
+                }
+                araña(){
+                    console.log("El gato te araña")
+                }
+            }
+            
+            var Garfield = new Gato();
+            var Bigotes = new Gato();
+            Garfield.maulla();
+            Garfield.araña();
+            var Snoopy = new Perro();
+            Snoopy.ladra()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+        <style>
+            canvas{
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="lienzo" width=128 height=128></canvas>
+        <script>
+            // Toma el elemento que tiene el id lienzo, y dentro de él voy a pintar en 2d
+            var contexto = document.getElementById("lienzo").getContext("2d")
+            // Quiero controlar el grosor
+            contexto.lineWidth = 4;
+            // Inicio una linea
+            contexto.beginPath()
+            // Dibujo un circulo
+            contexto.arc(64,64,60,0,Math.PI*2)
+            // Dibujo la linea
+            contexto.stroke();
+            contexto.strokeStyle = "red"
+            // Dibujo las manecillas
+            // Horas
+            contexto.lineWidth = 10;
+            contexto.beginPath();
+            // Muevo el cursor hacia un punto
+            contexto.moveTo(64,64)
+            // Creo una linea
+            contexto.lineTo(104,64);
+            contexto.stroke();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+        <style>
+            canvas{
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="lienzo" width=128 height=128></canvas>
+        <script>
+            // Toma el elemento que tiene el id lienzo, y dentro de él voy a pintar en 2d
+            var contexto = document.getElementById("lienzo").getContext("2d")
+            // Quiero pinta de color rojo
+            contexto.fillStyle = "red"
+            // Quiero pintar un rectángulo en pantalla
+            contexto.fillRect(10,10,20,20)
+        </script>
+    </body>
+</html>

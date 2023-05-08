@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+        <style>
+            #caja{
+                width:100px;
+                height:100px;
+                background:red;
+                position:absolute;
+                top:0px;
+                left:0px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="caja"></div>
+        <script>
+            var posx = Math.random()*500
+            var posy = Math.random()*500
+            var temporizador = setTimeout("bucle()",1000)
+            function bucle(){
+                posx += (Math.random()-0.5)*10
+                posy += (Math.random()-0.5)*10
+                document.getElementById("caja").style.top = posx+"px"
+                document.getElementById("caja").style.left = posy+"px"
+                clearTimeout(temporizador)
+                temporizador = setTimeout("bucle()",10)
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
